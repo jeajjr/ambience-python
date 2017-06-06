@@ -6,9 +6,9 @@ def unpackCommand4Bytes(input):
     # Only lower two bytes are used for command
     return input[0] + input[1]*(2**8)
 
-pinR = 5
-pinG = 4
-pinB = 0
+pinR = 4
+pinG = 0
+pinB = 5
 
 pwmR = PWM(Pin(pinR), freq=120, duty=512)
 pwmG = PWM(Pin(pinG), freq=120, duty=512)
