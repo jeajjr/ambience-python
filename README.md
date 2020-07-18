@@ -11,6 +11,5 @@ running [Micropython](https://docs.micropython.org/en/latest/esp8266/quickref.ht
 
 ## Functionality
 
-The application open a TCP server on port 45225. It expects three bytes to be 
-received, representing the intensity of the Red, Green and Blue lights, where 0
-represents an off-state and 255 a full-intensity state.
+The application open a TCP server on port 45225. It expects three 4-byte integers to be 
+received, representing the intensity of the Red, Green and Blue lights.
